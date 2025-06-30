@@ -1,0 +1,72 @@
+@media (min-width:1000px) {
+
+header{
+    display: grid;
+    grid-template-columns: 200px 1fr auto;
+}
+
+header h2{
+    justify-self: center;
+    font-size: 4vw;
+}
+#welcome{
+    font-size: 1.75rem;
+}
+/*NAV*/
+nav{
+    width: 30vw;
+}
+
+nav button{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    border: 1px solid var(--background-color);
+    background: var(--background-color);
+    margin: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: var(--menu);
+    transition: 1s ease-in-out;
+}
+
+#hambutton::after{
+    content: " Menu";
+}
+/*SECTION*/
+.pastelitos, .postrecitos{
+    display: flex;   
+    flex-wrap: wrap;
+    width: 600px;
+}
+.cards{
+    height: auto;
+    max-height: 450px;
+}
+.cards p{
+    font-size: 1.8rem;
+}
+.cards img{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    justify-self: center;
+}
+.cards h3{
+    font-size: 2.5rem;
+}
+.cards button{
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+}
+.verMas{
+    width: 200px;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+}

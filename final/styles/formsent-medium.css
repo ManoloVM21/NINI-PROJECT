@@ -1,0 +1,38 @@
+@media (min-width:500px) {
+    nav{
+        width: 52vw;
+    }
+    #welcome{
+        display: inline;
+        width: fit-content;
+        font-size: 1rem;
+        font-family: var(--menu);
+        color: white;
+        background-color: black;
+        padding: .75rem;
+        border-radius: 30px;
+        align-self: center;
+    }
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
+        z-index: 998; /* Debajo del nav, encima de todo lo demás */
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+        }
+
+    #overlay.visible {
+        opacity: 1;
+        visibility: visible;
+        }
+}
+@media (min-width:800px) {
+    nav{
+        width: 40vw;
+    }
+}

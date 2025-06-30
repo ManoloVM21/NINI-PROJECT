@@ -1,0 +1,125 @@
+@media (min-width:500px) {
+    nav{
+        width: 52vw;
+    }
+    #welcome{
+        display: inline;
+        width: fit-content;
+        font-size: 1rem;
+        font-family: var(--menu);
+        color: white;
+        background-color: black;
+        padding: .75rem;
+        border-radius: 30px;
+        align-self: center;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1rem;
+        gap: .2rem;
+    }
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
+        z-index: 998; /* Debajo del nav, encima de todo lo demás */
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+        }
+
+    #overlay.visible {
+        opacity: 1;
+        visibility: visible;
+        }
+
+    .cards{
+        max-width: 550px;
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-template-rows: 80px auto auto;
+    }
+    .cards p{
+        align-self:flex-start;
+    }
+    .cards img{
+        grid-column: 1/2;
+        grid-row: span 3;
+    }
+    .cards:hover{
+        background: #a4e9d6;
+    }
+    .cards button{
+    width: 8rem;
+    justify-self: center;
+    font-weight: bold;
+    border-radius: 30px;
+    align-self: center;
+    padding: 1em;
+    cursor: pointer;
+    transition: margin-left 0.6s ease, backgroun 0.6s ease, color 0.6s ease;
+    margin-left: 0;
+    }
+    .cards:hover button{
+        margin-left: 1.5rem;
+        background: black;
+        color: #fff;
+    }
+
+    dialog{
+        max-width: 600px;
+        font-size: 1.3rem;
+    }
+    .media img{
+        width: 100px;
+    }
+    /*CARRITO DE COMPRAS*/
+    #carro{
+        position: fixed;
+        bottom:0vh;
+        justify-self: end;
+        margin: 1.5rem;
+        justify-items: center;
+    }
+    #carrostuff section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #carrostuff {
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+        background-color: #fff;
+        border-radius: 15px;
+        border: 2px solid #ccc;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        padding: 1rem;
+        display: block;
+        width: 300px;
+        max-height: 400px;
+        overflow-y: auto;
+        z-index: 200;
+        font-size: 1.2rem;
+    }
+    #carrostuff p{
+        font-weight: bold;
+    }
+    #carro .hidden{
+        display: none;
+    }
+    #carroimg{
+        align-items: end;
+    }
+    #carroimg:hover{
+        cursor: pointer;
+    }
+}
+@media (min-width:800px) {
+    nav{
+        width: 40vw;
+    }
+}

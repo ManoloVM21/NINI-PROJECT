@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Nini Pasteles</title>
+    <meta name="author" content="Fernanda Vasquez">
+    <meta name="description" content="Descubre todo los tipos de pasteles y galletas que Nini Pasteles te ofrece">
+    <meta property="og:title" content="Nini Pasteles">
+    <meta property="og:description" content="Ven y mira todo lo que puedes disfrutar con Nini Pasteles">
+    <meta property="og:image" content="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/327972022_870617144056790_5590089366527097_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Iz_xn3t__9oQ7kNvwEypRsj&_nc_oc=AdljRMwxyBKzS4BF2BTD-lK96AXB2Pq_hU9tIjK5hT3nrInWBPZ5nVjcRVElPD2Q95mnv40-Fw-CiexJc1L5482o&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=UhsYuiQPBZwrnGF2vWvtAA&oh=00_AfKNf4Z8_4TY4UPdvDVZ7PUu489V5J2k_wyVDRW9ka6cuQ&oe=683EDD9D">
+    <meta property="og:url" content="https://manolovm21.github.io/NINI-PROJECT/home.html">
+    <link rel="icon" href="images/nini-logo.ico">
+    <link rel="stylesheet" href="styles/pide.css">
+    <link rel="stylesheet" href="styles/pide-medium.css">
+    <link rel="stylesheet" href="styles/pide-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Fugaz+One&display=swap" rel="stylesheet">
+    <script src="scripts/pideya.js" type="module"></script>
+</head>
+<body>
+    <nav id="banner" class="closed">
+            <button id="closeBanner">X</button>
+            <ul class="principal">
+                <li><a href="index.html" >Inicio</a></li>
+                <li><a href="pideya.html" class="currentpage">Contact Us</a></li>
+                <li id="productos">Productos
+                    <ul>
+                        <li><a href="productos.html#pasteles">Pasteles</a></li>
+                        <li><a href="productos.html#galletas">Galletas</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+        <div id="overlay" class="hidden"></div>
+    <header>
+        <button id="hambutton">≡</button>
+        
+        <h2>Nini Pasteleria</h2>
+
+        <p id="welcome"></p>
+    </header>
+    <main>
+        <h1>Realiza tu Pedido!</h1>
+        <form action="formsent.html" method="get">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre:</label><input type="text" name="nombre" id="nombre" required>
+                <label for="telefono">Telefono:</label><input type="tel" name="telefono" id="telefono" required>
+                <label for="email">Email:</label><input type="email" name="email" id="email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Pedido</legend>
+                <label for="buscador">Añade uno más</label>
+                <input name="pedido" type="text" id="buscador" placeholder="Buscar producto...">
+                <ul id="resultadosBusqueda"></ul>
+                <ul id="listaPedido"></ul>
+            </fieldset>
+            <input type="submit" value="Enviar Pedido" id="enviarWhatsapp">
+        </form>
+        <div id="carro">
+            <div id="carrostuff" class="hidden">
+            <section id="productos"></section>
+            <section id="carrito"></section>
+            <p id="total">Total: S/. 0.00</p>
+            </div>
+            <img id="carroimg" src="images/carrito-de-compras.png" alt="carrito" width="85">
+        </div>
+    </main>
+    <footer>
+        <div class="media">
+            <a href="https://www.facebook.com/profile.php?id=100089980932573"><img src="images/facebook.svg" alt="facebook" width="80"></a>
+            <a href="https://www.instagram.com/nini.pastel.es"><img src="images/instagram.svg" alt="instagram" width="80"></a>
+            <a href=""><img src="images/whatsapp.svg" alt="whatsapp" width="80"></a>
+            <a href="https://www.tiktok.com/@nini.pasteles"><img src="images/tiktok.svg" alt="tiktok" width="80"></a>
+        </div>
+        <div class="logos">
+            <img src="images/nini-logo.png" alt="nini-logo">
+            <p>&copy;<span id="currentyear"></span> all rights reserved.</p>
+        
+    </footer>
+</body>
+</html>

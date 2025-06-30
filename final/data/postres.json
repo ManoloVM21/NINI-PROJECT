@@ -1,0 +1,38 @@
+[
+  {
+    "id": 101,
+    "name": "Lemon Crumble",
+    "precio": 20,
+    "imagen": "images/images/crumble-limon.webp",
+    "description": "A delicious dessert with a crunchy base and fresh lemon filling, perfect for citrus lovers. Ideal as a light and refreshing treat.",
+    "nutritional": "Approximately 320 kcal per serving. Contains simple carbohydrates, healthy fats from butter, and vitamin C from lemon.",
+    "color": "lemonchiffon"
+  },
+  {
+    "id": 102,
+    "name": "Apple Crumble",
+    "precio": 20,
+    "imagen": "images/images/crumble-manzana.webp",
+    "description": "A classic dessert made with caramelized apples and a crunchy oat and cinnamon topping. Excellent when served with vanilla ice cream.",
+    "nutritional": "Approximately 350 kcal per serving. Rich in fiber, antioxidants from apples, and slow-digesting carbohydrates.",
+    "color": "moccasin"
+  },
+  {
+    "id": 103,
+    "name": "Lemon Pie",
+    "precio": 20,
+    "imagen": "images/images/pie-limon.webp",
+    "description": "A smooth and creamy lemon tart with a cookie crust, perfect for those who enjoy a sweet dessert with a tangy twist. Made with real lemon juice.",
+    "nutritional": "Around 400 kcal per serving. A good source of vitamin C and fats from butter and condensed milk.",
+    "color": "lemonchiffon"
+  },
+  {
+    "id": 104,
+    "name": "Oatmeal Chocolate Chip Cookies",
+    "precio": 20,
+    "imagen": "images/images/avena-chocochip.webp",
+    "description": "Soft and wholesome cookies made with whole oats and chocolate chips. A perfect snack that's both energizing and delicious.",
+    "nutritional": "Approximately 250 kcal per cookie. Contains fiber, plant-based protein, and antioxidants from dark chocolate.",
+    "color": "moccasin"
+  }
+]
