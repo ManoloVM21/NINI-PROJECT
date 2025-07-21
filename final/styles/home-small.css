@@ -374,7 +374,7 @@ section{
 }
 /*FOOTER*/
 footer{
-    margin: 1rem 0;
+    margin-top: 1rem;
 }
 footer div{
     border-top: 1px solid black;

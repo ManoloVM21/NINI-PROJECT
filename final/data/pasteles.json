@@ -6,7 +6,10 @@
     "imagen": "images/images/torta_1-nofondo.webp",
     "description": "A stunning cake inspired by Taylor Swift, perfect for fans and music lovers. Decorated with themed elements and a touch of glitter.",
     "nutritional": "Approximately 420 kcal per slice. Contains flour, sugar, eggs, milk, and food coloring.",
-    "color": "violet"
+    "color": "violet",
+    "carrusel":{
+      
+    }
   },
   {
     "id": 2,
