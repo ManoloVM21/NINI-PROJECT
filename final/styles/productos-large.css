@@ -1,5 +1,19 @@
 @media (min-width:1000px) {
-
+#productos ul {
+display: none;
+position: absolute;
+left: 5%;
+top:100%;
+padding: 0;
+text-align: center;
+}
+#productos ul li{
+    font-size: .8em;
+}
+#productos:hover ul {
+display:block;
+justify-items: flex-start;
+  }
 header{
     display: grid;
     grid-template-columns: 200px 1fr auto;
