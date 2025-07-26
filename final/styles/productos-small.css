@@ -194,9 +194,13 @@ section:not(.hero){
     font-size: 1.6rem;
 }
 .cards p{
-    margin-left:2rem;
-    font-size: 1rem;
-    color: rgb(87, 85, 85);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: calc(1.2em * 3);
+    line-height: 1.2em;
 }
 .cards button{
     background: none;

@@ -266,9 +266,9 @@ input[type="submit"]:hover{
     justify-self: end;
 }
 #resultadosBusqueda{
-    background: rgb(212, 211, 211);
+    background: rgba(240, 225, 213, 0.525);
     margin-top: -1rem;
-    border: 1px solid gray;
+    border: 1px solid rgb(234, 185, 150);
     width: 95%;
     padding: 0;
 }
@@ -276,6 +276,16 @@ input[type="submit"]:hover{
     list-style: none;
     padding: .5rem;
     justify-self: start;
+}
+#resultadosBusqueda select,
+#resultadosBusqueda Button{
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+}
+#resultadosBusqueda Button{
+    background: rgb(179, 253, 150);
+    border-radius: 10px;
 }
 /*FOOTER*/
 footer div{
