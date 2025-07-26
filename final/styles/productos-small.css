@@ -388,6 +388,7 @@ footer div{
 }
 #carroimg{
     align-items: end;
+    justify-self: end;
     width: 60px;
 }
 #carroimg:hover{
