@@ -8,6 +8,16 @@
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
 }
+button, input[type="button"], input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#carro {
+    bottom: 10px;
+    right: 10px;
+    transform: none !important;
+  }
 /*HEADER*/
 body{
     margin: 0;
@@ -587,13 +597,3 @@ dialog p {
     font-size: 1rem;
     background: white;
 }
-button, input[type="button"], input[type="submit"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-#carro {
-    bottom: 10px;
-    right: 10px;
-    transform: none !important;
-  }
