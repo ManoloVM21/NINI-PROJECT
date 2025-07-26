@@ -1,248 +1,392 @@
 [
   {
     "id": 1,
-    "name": "Taylor Swift Cake",
-    "precio": 90,
+    "name": "Pastel Éclat de Taylor Swift",
+    "precio": {
+      "Porción Individual (1kg)": 90,
+      "Torta Completa (2kg)": 170
+    },
     "imagen": "images/images/torta_1-nofondo.webp",
-    "description": "A stunning cake inspired by Taylor Swift, perfect for fans and music lovers. Decorated with themed elements and a touch of glitter.",
-    "nutritional": "Approximately 420 kcal per slice. Contains flour, sugar, eggs, milk, and food coloring.",
+    "description": "Exquisito pastel inspirado en Taylor Swift, decorado con elementos temáticos y toques de purpurina. Perfecto para fans y amantes de la música.",
+    "nutritional": "Aproximadamente 420 kcal por porción. Contiene harina, azúcar, huevos, leche y colorantes alimentarios.",
     "color": "violet",
-    "carrusel":{
-      
+    "carrusel": {
+      "imagen_principal": "images/images/torta_1-nofondo.webp"
     }
   },
   {
     "id": 2,
-    "name": "Aniversario de negocio",
-    "precio": 70,
+    "name": "Tarta Conmemorativa Empresarial",
+    "precio": {
+      "Porción Ejecutiva (1kg)": 70,
+      "Torta Corporativa (2kg)": 130
+    },
     "imagen": "images/images/mmash.webp",
-    "description": "Celebrate your business milestones with this elegant and professional cake design.",
-    "nutritional": "380 kcal per slice. Includes vanilla sponge, buttercream, and fondant details.",
-    "color": "lightblue"
+    "description": "Elegante diseño profesional para celebrar hitos empresariales, con detalles sofisticados en fondant.",
+    "nutritional": "380 kcal por porción. Base de bizcocho de vainilla, crema de mantequilla y decoración en fondant.",
+    "color": "lightblue",
+    "carrusel": {
+      "imagen_principal": "images/images/mmash.webp"
+    }
   },
   {
     "id": 3,
-    "name": "Dia de la Madre",
-    "precio": 50,
+    "name": "Creación Floral para Mamá",
+    "precio": {
+      "Tamaño Familiar (1kg)": 50,
+      "Gran Celebración (2kg)": 95
+    },
     "imagen": "images/images/dia-mama.webp",
-    "description": "A heartfelt cake crafted especially for Mother’s Day, decorated with flowers and loving messages.",
-    "nutritional": "390 kcal per slice. Made with natural fruit filling and whipped cream.",
-    "color": "lightcoral"
+    "description": "Conmovedor pastel artesanal para el Día de la Madre, adornado con flores naturales y mensajes de amor.",
+    "nutritional": "390 kcal por porción. Relleno de frutas naturales y crema batida.",
+    "color": "lightcoral",
+    "carrusel": {
+      "imagen_principal": "images/images/dia-mama.webp"
+    }
   },
   {
     "id": 4,
-    "name": "Dia de San Valentín",
-    "precio": 50,
+    "name": "Sinfonía de Amor - Edición San Valentín",
+    "precio": {
+      "Corazón Pequeño (1kg)": 50,
+      "Corazón Grande (2kg)": 95
+    },
     "imagen": "images/images/sanvalentin.webp",
-    "description": "A romantic cake for Valentine's Day with heart decorations and sweet flavors.",
-    "nutritional": "410 kcal per slice. Contains chocolate, cream, and red velvet layers.",
-    "color": "pink"
+    "description": "Pastel romántico con decoración de corazones y sabores exquisitos, perfecto para celebrar el amor.",
+    "nutritional": "410 kcal por porción. Capas de chocolate, crema y terciopelo rojo.",
+    "color": "pink",
+    "carrusel": {
+      "imagen_principal": "images/images/sanvalentin.webp"
+    }
   },
   {
     "id": 5,
-    "name": "Diva",
-    "precio": 80,
+    "name": "Divina Tentación",
+    "precio": {
+      "Edición Estándar (1kg)": 80,
+      "Edición Especial (2kg)": 150
+    },
     "imagen": "images/images/diva.webp",
-    "description": "A bold and glamorous cake for those who love to shine. Ideal for birthdays and parties.",
-    "nutritional": "430 kcal per slice. Includes edible glitter, chocolate sponge, and raspberry filling.",
-    "color": "pink"
+    "description": "Pastel glamuroso con brillo comestible, ideal para quienes aman brillar. Perfecto para cumpleaños y fiestas.",
+    "nutritional": "430 kcal por porción. Incluye bizcocho de chocolate y relleno de frambuesa.",
+    "color": "pink",
+    "carrusel": {
+      "imagen_principal": "images/images/diva.webp"
+    }
   },
   {
     "id": 6,
-    "name": "Geometry Dash",
-    "precio": 70,
+    "name": "Aventura Geométrica",
+    "precio": {
+      "Nivel Básico (1kg)": 70,
+      "Nivel Avanzado (2kg)": 130
+    },
     "imagen": "images/images/geometryDash.webp",
-    "description": "A colorful and playful cake inspired by the Geometry Dash game. Great for gamer birthdays.",
-    "nutritional": "400 kcal per slice. Made with layers of dyed sponge and sweet frosting.",
-    "color": "lightgreen"
+    "description": "Colorido pastel inspirado en el juego Geometry Dash, con diseños geométricos vibrantes.",
+    "nutritional": "400 kcal por porción. Bizcochos teñidos y frosting dulce.",
+    "color": "lightgreen",
+    "carrusel": {
+      "imagen_principal": "images/images/geometryDash.webp"
+    }
   },
   {
     "id": 7,
-    "name": "Cumpleaños 1",
-    "precio": 70,
+    "name": "Fiesta Clásica de Cumpleaños",
+    "precio": {
+      "Celebración Pequeña (1kg)": 70,
+      "Gran Fiesta (2kg)": 130
+    },
     "imagen": "images/images/cumpleaños1.webp",
-    "description": "Classic birthday cake with festive colors and simple charm. Ideal for any celebration.",
-    "nutritional": "370 kcal per slice. Basic vanilla cake with buttercream frosting.",
-    "color": "lightblue"
+    "description": "Pastel tradicional con colores festivos y decoración clásica, ideal para cualquier celebración.",
+    "nutritional": "370 kcal por porción. Bizcocho de vainilla con frosting de mantequilla.",
+    "color": "lightblue",
+    "carrusel": {
+      "imagen_principal": "images/images/cumpleaños1.webp"
+    }
   },
   {
     "id": 8,
-    "name": "Cumpleaños 2",
-    "precio": 70,
+    "name": "Explosión de Alegría",
+    "precio": {
+      "Edición Regular (1kg)": 70,
+      "Edición XL (2kg)": 130
+    },
     "imagen": "images/images/cumpleaños2.webp",
-    "description": "Bright and cheerful birthday cake designed to bring joy to your special day.",
-    "nutritional": "375 kcal per slice. Made with eggs, sugar, and natural vanilla flavoring.",
-    "color": "goldenrod"
+    "description": "Pastel vibrante y alegre diseñado para llevar felicidad a tu día especial.",
+    "nutritional": "375 kcal por porción. Elaborado con huevos, azúcar y esencia natural de vainilla.",
+    "color": "goldenrod",
+    "carrusel": {
+      "imagen_principal": "images/images/cumpleaños2.webp"
+    }
   },
   {
     "id": 9,
-    "name": "Cumpleaños 3",
-    "precio": 70,
+    "name": "Mundo Mágico Infantil",
+    "precio": {
+      "Versión Pequeña (1kg)": 70,
+      "Versión Grande (2kg)": 130
+    },
     "imagen": "images/images/cumpleaños3.webp",
-    "description": "Fun and colorful cake perfect for kids’ birthday parties with simple decorations.",
-    "nutritional": "390 kcal per slice. Contains milk, gluten, and artificial coloring.",
-    "color": "lightgray"
+    "description": "Pastel colorido y divertido perfecto para fiestas infantiles, con decoraciones sencillas pero encantadoras.",
+    "nutritional": "390 kcal por porción. Contiene leche, gluten y colorantes artificiales.",
+    "color": "lightgray",
+    "carrusel": {
+      "imagen_principal": "images/images/cumpleaños3.webp"
+    }
   },
   {
     "id": 10,
-    "name": "Cumpleaños 4",
-    "precio": 70,
+    "name": "Fantasía de Globos y Juguetes",
+    "precio": {
+      "Tamaño Mediano (1kg)": 70,
+      "Tamaño Familiar (2kg)": 130
+    },
     "imagen": "images/images/cumpleaños4.webp",
-    "description": "Creative and fun cake designed for children's celebrations, decorated with balloons and toys.",
-    "nutritional": "385 kcal per slice. Contains chocolate and marshmallow cream.",
-    "color": "antiquewhite"
+    "description": "Pastel creativo diseñado para celebraciones infantiles, decorado con globos y juguetes comestibles.",
+    "nutritional": "385 kcal por porción. Chocolate y crema de malvavisco.",
+    "color": "antiquewhite",
+    "carrusel": {
+      "imagen_principal": "images/images/cumpleaños4.webp"
+    }
   },
   {
     "id": 11,
-    "name": "Cars",
-    "precio": 70,
+    "name": "Carrera de Sabores - Edición Cars",
+    "precio": {
+      "Pista Pequeña (1kg)": 70,
+      "Gran Premio (2kg)": 130
+    },
     "imagen": "images/images/cars.webp",
-    "description": "Themed cake featuring the popular 'Cars' movie characters. Ideal for young fans.",
-    "nutritional": "405 kcal per slice. Includes fondant designs and chocolate layers.",
-    "color": "lightcoral"
+    "description": "Pastel temático con los personajes de la película Cars, ideal para pequeños fans del automovilismo.",
+    "nutritional": "405 kcal por porción. Incluye diseños en fondant y capas de chocolate.",
+    "color": "lightcoral",
+    "carrusel": {
+      "imagen_principal": "images/images/cars.webp"
+    }
   },
   {
     "id": 12,
-    "name": "Minnie Mouse",
-    "precio": 70,
+    "name": "Encanto de Minnie Mouse",
+    "precio": {
+      "Estilo Clásico (1kg)": 70,
+      "Edición Especial (2kg)": 130
+    },
     "imagen": "images/images/minie-mouse.webp",
-    "description": "Charming cake featuring Minnie Mouse. A perfect option for themed birthday parties.",
-    "nutritional": "395 kcal per slice. Includes strawberry filling and vanilla sponge.",
-    "color": "lightpink"
+    "description": "Hechizante pastel con la icónica Minnie Mouse, perfecto para fiestas temáticas infantiles.",
+    "nutritional": "395 kcal por porción. Relleno de fresa y bizcocho de vainilla.",
+    "color": "lightpink",
+    "carrusel": {
+      "imagen_principal": "images/images/minie-mouse.webp"
+    }
   },
   {
     "id": 13,
-    "name": "Floreado",
-    "precio": 70,
+    "name": "Jardín de Flores Comestibles",
+    "precio": {
+      "Ramo Pequeño (1kg)": 70,
+      "Jardín Completo (2kg)": 130
+    },
     "imagen": "images/images/floreado.webp",
-    "description": "Elegant floral cake with realistic flower decorations. Great for weddings and anniversaries.",
-    "nutritional": "380 kcal per slice. Uses sugar paste and flower extracts.",
-    "color": "lightgreen"
+    "description": "Elegante pastel con decoración floral realista, ideal para bodas y aniversarios.",
+    "nutritional": "380 kcal por porción. Utiliza pasta de azúcar y extractos florales.",
+    "color": "lightgreen",
+    "carrusel": {
+      "imagen_principal": "images/images/floreado.webp"
+    }
   },
   {
     "id": 14,
-    "name": "Durazno",
-    "precio": 70,
+    "name": "Melocotón Sublime",
+    "precio": {
+      "Porción Estándar (1kg)": 70,
+      "Porción Familiar (2kg)": 130
+    },
     "imagen": "images/images/durazno.webp",
-    "description": "Refreshing cake made with peach flavors and soft cream. Perfect for summer events.",
-    "nutritional": "360 kcal per slice. Contains real peach slices and whipped topping.",
-    "color": "goldenrod"
+    "description": "Refrescante pastel con sabores a melocotón y crema suave, perfecto para eventos veraniegos.",
+    "nutritional": "360 kcal por porción. Contiene trozos de melocotón natural y topping batido.",
+    "color": "goldenrod",
+    "carrusel": {
+      "imagen_principal": "images/images/durazno.webp"
+    }
   },
   {
     "id": 15,
-    "name": "Rosa",
-    "precio": 70,
+    "name": "Éxtasis de Rosas",
+    "precio": {
+      "Presentación Pequeña (1kg)": 70,
+      "Presentación Grande (2kg)": 130
+    },
     "imagen": "images/images/rosa.webp",
-    "description": "Soft pink cake with rose-inspired design. Ideal for romantic or delicate occasions.",
-    "nutritional": "370 kcal per slice. Infused with rose water and cream.",
-    "color": "gold"
+    "description": "Delicado pastel rosado con diseño inspirado en rosas, ideal para ocasiones románticas.",
+    "nutritional": "370 kcal por porción. Infundido con agua de rosas y crema.",
+    "color": "gold",
+    "carrusel": {
+      "imagen_principal": "images/images/rosa.webp"
+    }
   },
   {
     "id": 16,
-    "name": "Propuesta de Matrimonio",
-    "precio": 70,
+    "name": "Promesa de Eternidad",
+    "precio": {
+      "Tamaño Íntimo (1kg)": 70,
+      "Tamaño Compartir (2kg)": 130
+    },
     "imagen": "images/images/propuesta.webp",
-    "description": "Elegant cake made for proposals and engagements. Features hearts and ring toppers.",
-    "nutritional": "420 kcal per slice. Contains almond essence and fondant.",
-    "color": "lightcoral"
+    "description": "Exquisita tarta para propuestas de matrimonio y compromisos, con corazones y anillos comestibles.",
+    "nutritional": "420 kcal por porción. Contiene esencia de almendras y fondant.",
+    "color": "lightcoral",
+    "carrusel": {
+      "imagen_principal": "images/images/propuesta.webp"
+    }
   },
   {
     "id": 17,
-    "name": "Toy Story",
-    "precio": 70,
+    "name": "Aventura en el Juguetelandia",
+    "precio": {
+      "Versión Básica (1kg)": 70,
+      "Versión Completa (2kg)": 130
+    },
     "imagen": "images/images/toyStory.webp",
-    "description": "Colorful cake with characters from Toy Story. A hit for kids and nostalgic adults.",
-    "nutritional": "410 kcal per slice. Made with chocolate base and vanilla cream.",
-    "color": "ligthyellow"
+    "description": "Colorido pastel con los personajes de Toy Story, éxito garantizado en fiestas infantiles y para nostálgicos.",
+    "nutritional": "410 kcal por porción. Base de chocolate y crema de vainilla.",
+    "color": "lightyellow",
+    "carrusel": {
+      "imagen_principal": "images/images/toyStory.webp"
+    }
   },
   {
     "id": 18,
-    "name": "Gallina Pintadita",
-    "precio": 70,
+    "name": "Gallina Pintadita - Edición Infantil",
+    "precio": {
+      "Tamaño Pequeño (1kg)": 70,
+      "Tamaño Familiar (2kg)": 130
+    },
     "imagen": "images/images/gallina.webp",
-    "description": "Fun cake for toddlers featuring Gallina Pintadita. Bright colors and cheerful theme.",
-    "nutritional": "395 kcal per slice. Contains dairy, gluten, and eggs.",
-    "color": "lightblue"
+    "description": "Divertido pastel con la Gallina Pintadita, lleno de colores vibrantes y alegría para los más pequeños.",
+    "nutritional": "395 kcal por porción. Contiene lácteos, gluten y huevos.",
+    "color": "lightblue",
+    "carrusel": {
+      "imagen_principal": "images/images/gallina.webp"
+    }
   },
   {
     "id": 19,
-    "name": "Liso Blanco",
-    "precio": 70,
+    "name": "Elegancia Minimalista",
+    "precio": {
+      "Tamaño Clásico (1kg)": 70,
+      "Tamaño Grande (2kg)": 130
+    },
     "imagen": "images/images/liso-blanco.webp",
-    "description": "Simple and clean white cake, customizable for any occasion.",
-    "nutritional": "375 kcal per slice. Basic white sponge with butter frosting.",
-    "color": "silver"
+    "description": "Pastel blanco liso y elegante, completamente personalizable para cualquier ocasión especial.",
+    "nutritional": "375 kcal por porción. Bizcocho blanco con frosting de mantequilla.",
+    "color": "silver",
+    "carrusel": {
+      "imagen_principal": "images/images/liso-blanco.webp"
+    }
   },
   {
     "id": 20,
-    "name": "Cartera",
-    "precio": 70,
+    "name": "Bolso de Moda Comestible",
+    "precio": {
+      "Modelo Estándar (1kg)": 70,
+      "Modelo Premium (2kg)": 130
+    },
     "imagen": "images/images/cartera.webp",
-    "description": "Fashion-inspired cake shaped like a handbag. Perfect for stylish parties.",
-    "nutritional": "430 kcal per slice. Chocolate sponge and detailed sugar decorations.",
-    "color": "lightgray"
+    "description": "Innovador pastel con forma de bolso de mano, perfecto para fiestas de moda y amantes del diseño.",
+    "nutritional": "430 kcal por porción. Bizcocho de chocolate con decoraciones de azúcar.",
+    "color": "lightgray",
+    "carrusel": {
+      "imagen_principal": "images/images/cartera.webp"
+    }
   },
   {
     "id": 21,
-    "name": "Graduación",
-    "precio": 70,
+    "name": "Logro Académico",
+    "precio": {
+      "Diploma Pequeño (1kg)": 70,
+      "Diploma Grande (2kg)": 130
+    },
     "imagen": "images/images/graduacion.webp",
-    "description": "Celebrate academic milestones with this graduation-themed cake.",
-    "nutritional": "390 kcal per slice. Includes rolled fondant cap and diploma.",
-    "color": "antiquewhite"
+    "description": "Pastel temático para graduaciones, con gorros y diplomas comestibles para celebrar logros educativos.",
+    "nutritional": "390 kcal por porción. Incluye fondant modelado y decoraciones temáticas.",
+    "color": "antiquewhite",
+    "carrusel": {
+      "imagen_principal": "images/images/graduacion.webp"
+    }
   },
   {
     "id": 22,
-    "name": "Roblox",
-    "precio": 70,
+    "name": "Universo Roblox",
+    "precio": {
+      "Avatar Básico (1kg)": 70,
+      "Avatar Premium (2kg)": 130
+    },
     "imagen": "images/images/roblox.webp",
-    "description": "Fun and creative Roblox-themed cake. A favorite among young gamers.",
-    "nutritional": "405 kcal per slice. Includes fondant and colored frosting.",
-    "color": "gray"
+    "description": "Creativo pastel inspirado en Roblox, favorito entre los jóvenes gamers y amantes del mundo virtual.",
+    "nutritional": "405 kcal por porción. Incluye fondant y frosting coloreado.",
+    "color": "gray",
+    "carrusel": {
+      "imagen_principal": "images/images/roblox.webp"
+    }
   },
   {
     "id": 23,
-    "name": "Futbol PSG",
-    "precio": 70,
+    "name": "Pasión por el PSG",
+    "precio": {
+      "Cancha Pequeña (1kg)": 70,
+      "Estadio Completo (2kg)": 130
+    },
     "imagen": "images/images/psg.webp",
-    "description": "A football-themed cake representing PSG. Perfect for fans of the team.",
-    "nutritional": "410 kcal per slice. Contains vanilla cake and printed edible image.",
-    "color": "lightblue"
+    "description": "Pastel temático del Paris Saint-Germain, ideal para fanáticos del fútbol y celebraciones deportivas.",
+    "nutritional": "410 kcal por porción. Bizcocho de vainilla con imagen comestible impresa.",
+    "color": "lightblue",
+    "carrusel": {
+      "imagen_principal": "images/images/psg.webp"
+    }
   },
   {
     "id": 24,
-    "name": "Messi",
-    "precio": 70,
+    "name": "Homenaje a Messi",
+    "precio": {
+      "Trofeo Pequeño (1kg)": 70,
+      "Gran Trofeo (2kg)": 130
+    },
     "imagen": "images/images/messi.webp",
-    "description": "Cake dedicated to Lionel Messi, complete with jersey and ball decorations.",
-    "nutritional": "400 kcal per slice. Made with chocolate and vanilla layers.",
-    "color": "skyblue"
+    "description": "Pastel dedicado a Lionel Messi, con detalles de camiseta y balón comestibles para los amantes del fútbol.",
+    "nutritional": "400 kcal por porción. Capas de chocolate y vainilla.",
+    "color": "skyblue",
+    "carrusel": {
+      "imagen_principal": "images/images/messi.webp"
+    }
   },
   {
     "id": 25,
-    "name": "Spiderman",
-    "precio": 70,
+    "name": "Telaraña de Sabores",
+    "precio": {
+      "Aventura Básica (1kg)": 70,
+      "Aventura Completa (2kg)": 130
+    },
     "imagen": "images/images/spiderman.webp",
-    "description": "Superhero cake featuring Spiderman’s web and mask. Great for action-themed birthdays.",
-    "nutritional": "395 kcal per slice. Contains gluten, dairy, and food dyes.",
-    "color": "lightcoral"
+    "description": "Pastel de superhéroe con la telaraña y máscara de Spiderman, perfecto para cumpleaños con temática de acción.",
+    "nutritional": "395 kcal por porción. Contiene gluten, lácteos y colorantes alimentarios.",
+    "color": "lightcoral",
+    "carrusel": {
+      "imagen_principal": "images/images/spiderman.webp"
+    }
   },
   {
     "id": 26,
-    "name": "Minnie Mouse 2",
-    "precio": 70,
+    "name": "Minnie Mouse - Edición Especial",
+    "precio": {
+      "Estilo Clásico (1kg)": 70,
+      "Estilo Premium (2kg)": 130
+    },
     "imagen": "images/images/minnie2.webp",
-    "description": "Another adorable Minnie Mouse design with bows and polka dots.",
-    "nutritional": "395 kcal per slice. Features fruit layers and whipped cream.",
-    "color": "lightpink"
-  },
-  {
-    "id": 27,
-    "name": "Keke de Naranja",
-    "precio": 50,
-    "imagen": "images/images/keke-naranja.webp",
-    "description": "Moist and fluffy orange cake, ideal for a light treat.",
-    "nutritional": "350 kcal per slice. Made with fresh orange juice and zest.",
-    "color": "orange"
+    "description": "Encantadora versión especial de Minnie Mouse, con lazos y lunares que la hacen irresistible.",
+    "nutritional": "395 kcal por porción. Capas de fruta y crema batida.",
+    "color": "lightpink",
+    "carrusel": {
+      "imagen_principal": "images/images/minnie2.webp"
+    }
   }
 ]

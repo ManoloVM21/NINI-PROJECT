@@ -34,8 +34,8 @@
         opacity: 1;
         visibility: visible;
         }
-    section h2{
-        font-size: 5em;
+    section >h2{
+        font-size: 4em;
     }
     .cards p{
         margin: 0;

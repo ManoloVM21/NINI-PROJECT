@@ -1,38 +1,89 @@
 [
   {
     "id": 101,
-    "name": "Lemon Crumble",
-    "precio": 20,
-    "imagen": "images/images/crumble-limon.webp",
-    "description": "A delicious dessert with a crunchy base and fresh lemon filling, perfect for citrus lovers. Ideal as a light and refreshing treat.",
-    "nutritional": "Approximately 320 kcal per serving. Contains simple carbohydrates, healthy fats from butter, and vitamin C from lemon.",
-    "color": "lemonchiffon"
+    "name": "Lemon Pie",
+    "precio":{
+      "Unidad":7,
+      "4 Pack":30,
+      "Familiar":70
+    },
+    "imagen": "images/postres/pie-limon-pequeño.webp",
+    "description": "Exquisito pie de limón con una base crujiente de galleta y un relleno cremoso de limón fresco. El equilibrio perfecto entre lo dulce y lo ácido, coronado con un delicado merengue tostado. Ideal para ocasiones especiales o como capricho gourmet.",
+    "nutritional": "420 kcal por porción. Contiene vitamina C del limón (15% VD), calcio (8% VD) y hierro (6% VD). Moderado en azúcares naturales, con grasas saludables de la mantequilla y proteínas del huevo.",
+    "color": "lemonchiffon",
+    "carrusel":{
+      "imagen1":"images/postres/pie-limon-pequeño.webp",
+      "imagen2":"images/postres/pie-limon-grande.webp",
+      "imagen3":"images/postres/pie-limon-todos.jpg",
+      "imagen4":"images/postres/videos/pie-limon-todos-video.mp4"
+    }
   },
   {
     "id": 102,
     "name": "Apple Crumble",
-    "precio": 20,
-    "imagen": "images/images/crumble-manzana.webp",
-    "description": "A classic dessert made with caramelized apples and a crunchy oat and cinnamon topping. Excellent when served with vanilla ice cream.",
-    "nutritional": "Approximately 350 kcal per serving. Rich in fiber, antioxidants from apples, and slow-digesting carbohydrates.",
-    "color": "moccasin"
+    "precio": {
+      "Unidad":6,
+      "4 Pack":25,
+      "Familiar":60
+    },
+    "imagen": "images/postres/crumble-manzana.webp",
+    "description": "Reconfortante postre de manzanas canela caramelizadas con un crujiente topping de avena, nuez moscada y mantequilla. Las manzanas se derriten en boca mientras la cobertura dorada aporta textura. Se recomienda servir caliente con helado de vainilla artesanal.",
+    "nutritional": "380 kcal por porción. Alto contenido en fibra (20% VD) por las manzanas y avena. Fuente de potasio (10% VD) y antioxidantes naturales. Bajo en sodio y sin conservantes artificiales.",
+    "color": "moccasin",
+    "carrusel":{
+      "imagen1":"images/postres/crumble-manzana.webp",
+      "imagen2":"images/postres/postres-crumbles.jpg",
+      "imagen3":"images/postres/videos/crumble-manzana.mp4"
+    }
   },
   {
     "id": 103,
-    "name": "Lemon Pie",
-    "precio": 20,
-    "imagen": "images/images/pie-limon.webp",
-    "description": "A smooth and creamy lemon tart with a cookie crust, perfect for those who enjoy a sweet dessert with a tangy twist. Made with real lemon juice.",
-    "nutritional": "Around 400 kcal per serving. A good source of vitamin C and fats from butter and condensed milk.",
-    "color": "lemonchiffon"
+    "name": "Galletas de Avenas con Chocochip",
+    "precio": {
+      "1/2 Docena": 15,
+      "1 Docena":25,
+      "15u": 12.5,
+      "30u":25,
+      "50u":42
+    },
+    "imagen": "images/postres/avena-chocochip.webp",
+    "description": "Galletas artesanales con copos de avena integral y generosas chips de chocolate semiamargo. Textura exterior crujiente con interior tierno. Endulzadas naturalmente con miel y perfectas para el desayuno o merienda energética.",
+    "nutritional": "265 kcal por galleta. Excelente fuente de fibra (15% VD) y proteína vegetal (5g). Contiene hierro (8% VD) y magnesio. Chocolate rico en flavonoides antioxidantes. Sin azúcares refinados añadidos.",
+    "color": "moccasin",
+    "carrusel":{
+      "imagen1":"images/postres/avena-chocochip.webp",
+      "imagen2":"images/postres/chocochip.jpg",
+      "imagen3":"images/postres/videos/gallletas-chocochips.mp4"
+    }
   },
   {
     "id": 104,
-    "name": "Oatmeal Chocolate Chip Cookies",
-    "precio": 20,
-    "imagen": "images/images/avena-chocochip.webp",
-    "description": "Soft and wholesome cookies made with whole oats and chocolate chips. A perfect snack that's both energizing and delicious.",
-    "nutritional": "Approximately 250 kcal per cookie. Contains fiber, plant-based protein, and antioxidants from dark chocolate.",
-    "color": "moccasin"
+    "name": "Keke De Naranja",
+    "precio":{
+      "1/2 Kilo":17,
+      "1 Kilo":35
+    },
+    "imagen": "images/postres/keke-naranja.webp",
+    "description": "Esponjoso bizcocho aromatizado con jugo y ralladura de naranja fresca, con un glaseado cítrico que realza su sabor. Textura húmeda y esponjosa con notas brillantes de cítricos. Perfecto para acompañar el té de la tarde.",
+    "nutritional": "320 kcal por porción (100g). Rico en vitamina C (25% VD) y tiamina. Bajo en grasas saturadas (3g). Contiene fibra dietética (8% VD) de la harina integral opcional.",
+    "color": "lemonchiffon",
+    "carrusel":{
+      "imagen1":"images/postres/keke-naranja.webp"
+    }
+  },
+  {
+   "id": 105,
+    "name": "Keke De Platano",
+    "precio":{
+      "1/2 Kilo":17,
+      "1 Kilo":35
+    },
+    "imagen": "images/postres/keke-naranja.webp",
+    "description": "Húmedo y fragante pastel de banana natural, elaborado con plátanos maduros triturados y nueces tostadas. Dulzor natural intensificado con un toque de canela y esencia de vainilla. Ideal para desayunos nutritivos.",
+    "nutritional": "350 kcal por porción (100g). Alto contenido en potasio (12% VD) y vitamina B6 (20% VD) del plátano. Fuente de magnesio y grasas saludables de las nueces. Sin lactosa ni gluten en versión especial.",
+    "color": "lemonchiffon",
+    "carrusel":{
+      "imagen1":"images/postres/keke-naranja.webp"
+    }
   }
 ]

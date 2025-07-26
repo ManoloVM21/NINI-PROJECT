@@ -148,21 +148,24 @@ dialog {
 }
 
 dialog > h2 {
-  font-size: 1.5rem ;
+  font-size: 1.4rem ;
   margin: 1rem 0 ;
   border-radius: 6px;
   padding: .5rem;
 }
 
 dialog .agregar{
-    padding: .75rem;
     display: block;
     justify-self: center;
     border: none;
     border-radius: 30px;
-    background: none;
+    background-color: white;
     transition: .4s all ease-in-out;
     cursor: pointer;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
 }
 dialog .agregar::before{
     content: "🛒 ";
@@ -205,7 +208,7 @@ dialog .agregar:hover{
 /*SECTIONS*/
 section > h2{
     font-family: 'Fugaz One';
-    font-size:15vw;
+    font-size:2rem;
     margin: 3rem;
     z-index: 1;
 }
@@ -237,7 +240,7 @@ section{
 .cards h3{
     display: block;
     justify-self: start;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 .cards p{
     display: -webkit-box;
@@ -290,12 +293,29 @@ section{
     }
 }
 /*CARRITO DE COMPRAS*/
+#carrito div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#carrito button {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
 #carro{
     position: fixed;
     bottom:0vh;
     justify-self: end;
     margin: .5rem;
     justify-items: center;
+    z-index: 1;
 }
 #carrostuff section{
     display: grid;
@@ -314,17 +334,13 @@ section{
     width: 250px;
     max-height: 400px;
     overflow-y: auto;
-    z-index: 200;
     font-size: 1rem;
 }
 #carrostuff button{
     cursor: pointer;
     align-content: center;
 }
-#carrito div:not(#pagar){
-    display: flex;
-    justify-content: space-between;
-}
+
 #carrostuff p{
     font-weight: bold;
     justify-self: center;
@@ -346,31 +362,32 @@ section{
   background-color: red;
   color: white;
   font-size: 0.8rem;
-  font-weight: bold;
   padding: 2px 6px;
   border-radius: 50%;
   transform: translate(25%, -25%);
   z-index: 10;
 }
-#pagar{
+#pagar {
     display: flex;
     background: green;
     color: white;
     font-weight: bold;
-    align-self: center;
-    border-radius: 10px;
-    justify-content: center;
-    border: 2px solid black;
-    height: 40px;
     align-items: center;
-    transition: .2s all ease-in-out;
+    justify-content: center; 
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 50px;
+    transition: transform 3s ease-in-out;
+    padding: 0 15px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box; 
 }
 #pagar p{
     margin-left: 1rem;
 }
 #pagar:hover{
     scale: 1.05;
-    transform: rotateY("30");
 }
 /*FOOTER*/
 footer{
@@ -395,4 +412,174 @@ footer div{
 }
 .logos img{
     height: 200px;
+}
+/* Estilos del contenedor principal */
+.cards {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    max-width: 300px;
+}
+
+/* Estilos del diálogo */
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 90%;
+    width: 600px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos del carrusel */
+.carrusel-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto;
+    overflow: hidden;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.carrusel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.carrusel-item {
+    width: 100%;
+    display: none;
+    object-fit: contain;
+    border-radius: 8px;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+.carrusel-item.active {
+    display: block;
+}
+
+/* Estilos para videos */
+.video-container {
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+.video-container.active {
+    display: block;
+}
+
+video.carrusel-item {
+    width: 100%;
+    max-height: 400px;
+    background: #000;
+    display: block;
+}
+
+/* Botones de navegación */
+.carrusel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.carrusel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carrusel-button.prev {
+    left: 15px;
+}
+
+.carrusel-button.next {
+    right: 15px;
+}
+
+/* Botón de reproducción de video */
+.video-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-play-button:hover {
+    background: rgba(200, 0, 0, 0.8);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+/* Estilos para precios y descripción */
+dialog p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+
+.verMas {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--background-color);
+    color: rgb(90, 39, 3);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.precio-container {
+    margin: 15px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+
+}
+
+.precio-select {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 250px;
+    font-size: 1rem;
+    background: white;
 }

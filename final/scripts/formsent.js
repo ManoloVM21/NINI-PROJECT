@@ -5,7 +5,7 @@ footer();
 
 const info = new URLSearchParams(window.location.search);
 
-document.querySelector("#thankyou").innerHTML = `GRACIAS, ${info.get('nombre').toUpperCase()}!`;
+document.querySelector("#thankyou").innerHTML = `💕GRACIAS, ${info.get('nombre').toUpperCase()}!💕`;
 console.log(info.get('fname'));
 document.querySelector("#info").innerHTML = `Para confirmar, tu telefono es +${info.get("telefono")}' y tu correo es '${info.get("email")}'`;
 
