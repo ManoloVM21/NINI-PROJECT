@@ -1,7 +1,10 @@
 import { nav } from "./nav.mjs";
 import { footer } from "./footer.mjs";
+import { agregarCarrito,carritoAccion,mostrarCarrito,actualizarContador } from "./carrito.mjs";
 nav();
 footer();
+mostrarCarrito();
+carritoAccion();
 
 const info = new URLSearchParams(window.location.search);
 

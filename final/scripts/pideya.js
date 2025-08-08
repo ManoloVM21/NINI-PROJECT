@@ -1,7 +1,11 @@
 import { nav } from "./nav.mjs";
-nav();
 import { footer } from "./footer.mjs";
+import { agregarCarrito,carritoAccion,mostrarCarrito,actualizarContador } from "./carrito.mjs";
+nav();
 footer();
+mostrarCarrito();
+carritoAccion();
+actualizarContador();
 
 // Cargar carrito desde localStorage
 let lista;
