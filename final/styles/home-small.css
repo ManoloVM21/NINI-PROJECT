@@ -137,7 +137,8 @@ nav button:hover{
 }
 /* Submenú */
 #productos ul {
-display: none;
+display:block;
+justify-items: flex-start;
 position: absolute;
 left: 5%;
 top:100%;
@@ -147,10 +148,6 @@ text-align: center;
 #productos ul li{
     font-size: .8em;
 }
-#productos:hover ul {
-display:block;
-justify-items: flex-start;
-  }
 /*DIALOG*/
 dialog {
     align-self: center;
