@@ -48,6 +48,7 @@ header h2{
     color: rgb(90, 39, 3);
     margin: 0;
     text-align: center;
+    cursor: pointer;
 }
 .hero {
   width: 100%;

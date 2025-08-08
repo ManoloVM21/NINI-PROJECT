@@ -25,4 +25,9 @@ export function nav(){
     } else{
         welcome.innerHTML = "Welcome!"
     }
+    
+    const logonini = document.querySelector(".logo");
+    logonini.addEventListener("click", ()=>{
+        window.open("index.html");
+    })
 }
