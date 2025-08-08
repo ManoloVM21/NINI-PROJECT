@@ -4,13 +4,9 @@
     --font-family: 'Playfair Display', serif;
     --menu:'Fascinate', cursive;
 }
-* {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-text-size-adjust: 100%;
-}
+
 button, input[type="button"], input[type="submit"] {
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 #carro {
