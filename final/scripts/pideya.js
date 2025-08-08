@@ -1,11 +1,10 @@
 import { nav } from "./nav.mjs";
 import { footer } from "./footer.mjs";
-import { agregarCarrito,carritoAccion,mostrarCarrito,actualizarContador } from "./carrito.mjs";
+import {carritoAccion,mostrarCarrito,} from "./carrito.mjs";
 nav();
 footer();
 mostrarCarrito();
 carritoAccion();
-actualizarContador();
 
 // Cargar carrito desde localStorage
 let lista;
@@ -125,13 +124,13 @@ function mostrarResultados(lista) {
             if (typeof prod.precio === 'object') {
                 const tipoSeleccionado = li.querySelector(".precio-select").value;
                 const precioSeleccionado = prod.precio[tipoSeleccionado];
-                agregarCarrito({
+                agregarCarritoL({
                     ...prod,
                     precioSeleccionado,
                     tipoSeleccionado
                 });
             } else {
-                agregarCarrito(prod);
+                agregarCarritoL(prod);
             }
         });
         
@@ -139,7 +138,7 @@ function mostrarResultados(lista) {
     });
 }
 
-function agregarCarrito(producto) {
+function agregarCarritoL(producto) {
     let listaActual;
     try {
         const raw = JSON.parse(localStorage.getItem("carrito"));
