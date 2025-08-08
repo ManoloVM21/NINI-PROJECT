@@ -4,6 +4,9 @@
     --font-family: 'Playfair Display', serif;
     --menu:'Fascinate', cursive;
 }
+button:focus, input:focus {
+  outline: none;
+}
 
 button, input[type="button"], input[type="submit"] {
   -webkit-appearance: none;
