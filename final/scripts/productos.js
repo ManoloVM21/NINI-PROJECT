@@ -4,7 +4,7 @@ import { footer } from "./footer.mjs";
 footer();
 import { carrito, agregarCarrito, eliminarDelCarrito,actualizarContador, mostrarCarrito, carritoAccion} from "./carrito.mjs";
 let pagina = 0;
-const cantidad = 4;
+const cantidad = 2;
 let todosLosPasteles = [];
 mostrarCarrito();
 actualizarContador();
@@ -12,7 +12,7 @@ async function Cards() {
     try{
         const response = await fetch("data/pasteles.json");
         todosLosPasteles = await response.json();
-        mostrarSiguienteLote();
+        mostrarSiguienteLote1();
     } catch(error){
         console.log(error);
     }
@@ -20,9 +20,9 @@ async function Cards() {
 }
 Cards()
 const secpasteles = document.querySelector("#pasteles");
-function mostrarSiguienteLote() {
-    const inicio = pagina2 * cantidad2;
-    const fin = inicio + cantidad2;
+function mostrarSiguienteLote1() {
+    const inicio = pagina * cantidad;
+    const fin = inicio + cantidad;
     const lote = todosLosPasteles.slice(inicio, fin);
     
     lote.forEach(item => {
@@ -193,12 +193,12 @@ function mostrarSiguienteLote() {
     });
 
     // Manejo del botón "Ver Más" (manteniendo tu lógica original)
-    const verMas2 = document.querySelector("#verMas2");
-    pagina2++;
-    if (pagina2 * cantidad2 >= todosLosPostres.length) {
-        verMas2.style.display = "none";
+    const verMas = document.querySelector("#verMas1");
+    pagina++;
+    if (pagina * cantidad >= todosLosPasteles.length) {
+        verMas.style.display = "none";
     }
-    verMas2.addEventListener("click", mostrarSiguienteLote2);
+    verMas.addEventListener("click", mostrarSiguienteLote1);
 }
 
 let pagina2 = 0;
