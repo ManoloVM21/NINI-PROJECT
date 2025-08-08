@@ -226,7 +226,7 @@ input[type="submit"]:hover{
 #carro{
     position: fixed;
     bottom:0vh;
-    justify-self: end;
+    right: 0;
     margin: .5rem;
     justify-items: center;
     z-index: 1;
