@@ -207,12 +207,29 @@ input[type="submit"]:hover{
     background-color: rgb(191, 151, 122);
 }
 /*CARRITO DE COMPRAS*/
+#carrito div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#carrito button {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
 #carro{
     position: fixed;
     bottom:0vh;
     justify-self: end;
     margin: .5rem;
     justify-items: center;
+    z-index: 1;
 }
 #carrostuff section{
     display: grid;
@@ -220,22 +237,27 @@ input[type="submit"]:hover{
 }
 #carrostuff {
     position: absolute;
-    bottom: 60px;
+    bottom: 80px;
     right: 0;
     background-color: #fff;
     border-radius: 15px;
     border: 2px solid #ccc;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    padding: .2rem;
+    padding: .5rem;
     display: block;
     width: 250px;
     max-height: 400px;
     overflow-y: auto;
-    z-index: 200;
     font-size: 1rem;
 }
+#carrostuff button{
+    cursor: pointer;
+    align-content: center;
+}
+
 #carrostuff p{
     font-weight: bold;
+    justify-self: center;
 }
 #carro .hidden{
     display: none;
@@ -246,6 +268,40 @@ input[type="submit"]:hover{
 }
 #carroimg:hover{
     cursor: pointer;
+}
+#contador-carrito {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  transform: translate(25%, -25%);
+  z-index: 10;
+}
+#pagar {
+    display: flex;
+    background: green;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 50px;
+    transition: transform 3s ease-in-out;
+    padding: 0 15px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box; 
+}
+#pagar p{
+    margin-left: 1rem;
+}
+#pagar:hover{
+    scale: 1.05;
 }
 /*LISTA*/
 #listaPedido li{
